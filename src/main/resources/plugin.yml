@@ -1,0 +1,14 @@
+name: Launcher
+main: com.Eris.Launcher
+version: 1.0.1.1
+description: Redstone Launchpads
+commands:
+  rslreload:
+    description: Reloads the plugin's configuration.
+permissions:
+  rsl.launch:
+    description: Can they be launched
+    default: true
+  rsl.reload:
+    description: Can they reload the config
+    default: op
