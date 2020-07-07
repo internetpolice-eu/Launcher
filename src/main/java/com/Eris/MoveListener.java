@@ -39,7 +39,7 @@ public class MoveListener implements Listener{
 				plugin.logger.warning("The plate config was improperly set. Defaulting to Stone Pressure Plate.");
 				plateWarn = true;
 			}
-			cfg_plate = Material.STONE_PLATE;
+			cfg_plate = Material.STONE_PRESSURE_PLATE;
 		}
 		if(cfg_block == null){
 			if(!blockWarn){
@@ -74,7 +74,7 @@ public class MoveListener implements Listener{
 	@EventHandler
 	public void onPlayerDamage(EntityDamageEvent event){
 		Entity player = event.getEntity();
-		if(player instanceof Player && ((Player)player).hasPermission("rsl.launch")){
+		if(player instanceof Player && (player).hasPermission("rsl.launch")){
 			event.setCancelled(true);
 		}
 	}

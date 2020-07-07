@@ -1,6 +1,6 @@
 name: Launcher
 main: com.Eris.Launcher
-version: 1.0.1.1
+version: ${project.version}
 description: Redstone Launchpads
 commands:
   rslreload:
