@@ -1,7 +1,8 @@
 name: Launcher
-main: com.Eris.Launcher
+main: com.eris.Launcher
 version: ${project.version}
 description: Redstone Launchpads
+api-version: 1.16
 commands:
   rslreload:
     description: Reloads the plugin's configuration.
